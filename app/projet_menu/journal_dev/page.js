@@ -1,21 +1,18 @@
 import  fs  from 'fs';
 
-import React from "react"
+import React from "react";
 
-import Container from "@mui/material/Container"
-import Typography from "@mui/material/Typography"
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 import Link from '@mui/material/Link';
 
 import { getArticlesData } from "@/lib/api/journal_dev";
 
 async function Journal( {params} ) {
   const articles = await getArticlesData();
-  //var files = fs.readdirSync(path);
-  
-  //var articles = files.map( getArticle);
-  //articles.sort(compare);
-  //console.log(Articles)
   const TotalCount = articles.length;
+  //console.log(articles);
+  
   return (
           <Container maxWidth="md" sx={{mt: 3}}>
             <Typography component="h3" variant="h5">

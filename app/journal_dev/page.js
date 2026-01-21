@@ -19,30 +19,19 @@ async function Journal( ) {
             </Typography>
             {articles.map((node) => (
               <div key={node.id}>
-                 <Typography component="h4" variant="h6"
-                      css={`color: darkgreen;`}
-                  >
-                    <Link href={node.slug }
-                          css={`
-                            text-decoration: none;
-                            color: inherit;
-                          `}
-                      >
+                 <Typography component="h4" variant="h6" >
+                    <Link href={node.slug }>
                         {node.titre}{" "}
                       </Link>
-                      <span
-                        css={`
-                          color: "#555"
-                          font-size: smaller`}
-                      >
+                      <span className="pluspetit">
                         — {node.date}
                       </span>
-                  </Typography>
-                  <Container maxWidth="md">
+                 </Typography>  
+                 <Container maxWidth="md">
                     <Typography component="body1" variant="body2">
                       {node.excerpt}
                     </Typography>
-                  </Container>
+                 </Container>
                 
               </div>
             ))}
