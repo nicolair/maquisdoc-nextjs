@@ -1,12 +1,12 @@
 
-import React from "react";
+import React from 'react';
 import  fs  from 'fs';
 //import { css } from "@emotion/react"
 //import { graphql , Link} from "gatsby"
 //import { rhythm } from "../../utils/typography"
-
+import { Icons } from '@/components/icons';
 //import Layout from "../../components/layout"
-
+import Link from '@mui/material/Link';
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Table from '@mui/material/Table';
@@ -23,9 +23,17 @@ import { getArticlesData } from "@/lib/api/journal_math";
 //import IconeDownloadPdf from "/src/components/icones/iconedownloadpdf";
 
 async function ListeNouveautePage(){
-  const articles = await getArticlesData();
-  const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(5);
+  //const articles = await getArticlesData();
+  //const [page, setPage] = React.useState(0);
+  //const [rowsPerPage, setRowsPerPage] = React.useState(5);
+  const data = {};
+    data.maquis = {};
+    data.maquis.documents = [
+      {titre:'tagada', 
+       date:'01/01/01',
+       url:'urltagada', 
+       _id:'idtagada'}
+    ];
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
   };
@@ -36,45 +44,6 @@ async function ListeNouveautePage(){
 
   return (
     <div>
-          <Container maxWidth="md" sx={{mt: 3}}>
-            <Typography component="h3" variant="h5">
-              Articles du journal mathématique: les {data.allMarkdownRemark.totalCount} plus récents
-            </Typography>
-            {data.allMarkdownRemark.edges.map(({ node }) => (
-              <div key={node.id}
-                   css={css`
-                     margin-top: ${rhythm(1 / 2)};
-                   `}
-              >
-                <Link
-                  to={node.fields.slug}
-                  css={css`
-                    text-decoration: none;
-                    color: inherit;
-                  `}
-                >
-                  <Typography component="h4" variant="h7"
-                  >
-                    {node.frontmatter.title}{" "}
-                  
-                    <span
-                      css={css`
-                        color: #555;
-                        font-size: x-small
-                      `}
-                    >
-                      — {node.frontmatter.date}
-                    </span>
-                  </Typography>
-                  <Container maxWidth="md">
-                    <Typography component="body1" variant="body2">
-                      {node.excerpt}
-                    </Typography>
-                  </Container>
-                </Link>
-              </div>
-            ))}
-          </Container>
 
         <Container maxWidth="md" sx={{mt: 3}}>
           <Typography component="h3" variant="h5">
@@ -100,7 +69,6 @@ async function ListeNouveautePage(){
                 </TableHead>
                 <TableBody typography="body1">
                   {data.maquis.documents
-                    .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                     .map(({titre, date, url,_id},index)=>(
                       <TableRow key={index}>
                         <TableCell>
@@ -113,20 +81,18 @@ async function ListeNouveautePage(){
                         </TableCell>
                         <TableCell> 
                           <a 
-                            css={css`color:darkgreen;`}
                             href= {url}
                             target="blank"
                             rel="noopener noreferrer"
                           >
-                            <IconeDownloadPdf />
+                            <Icons.DownloadPdf/> 
                           </a>
                         </TableCell>
                         <TableCell>
                           <Link 
-                           css={css`color: darkgreen;`}
                            to= {"/document_"+_id}
                           >
-                            <IconeVueDePres />
+                            <Icons.VueDePres/> 
                          </Link>
                         </TableCell>
                       </TableRow>
@@ -134,15 +100,6 @@ async function ListeNouveautePage(){
                 </TableBody>
               </Table>
             </TableContainer >
-            <TablePagination
-              rowsPerPageOptions={[5, 10, 25]}
-              component="div"
-              count={data.maquis.documents.length}
-              rowsPerPage={rowsPerPage}
-              page={page}
-              onPageChange={handleChangePage}
-              onRowsPerPageChange={handleChangeRowsPerPage}
-            />
           </Container>
         </Container>
   </div>      

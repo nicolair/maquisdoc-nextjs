@@ -1,8 +1,3 @@
----
-theme: développement
-title: Dépôts
-rang: 2
----
 ### Dépôts
 
 Un *dépôt*, est un dispositif organisé permettant de stocker les sources de documents pédagogiques d'un même type et d'un même *auteur*. 

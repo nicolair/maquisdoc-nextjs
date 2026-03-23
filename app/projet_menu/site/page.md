@@ -1,9 +1,4 @@
----
-theme: développement
-title: Site web - vues
-rang: 4
----
-### Site web
+### Site web - vues
 Le code du site est [disponible](https://github.com/nicolair/maquisdoc-site) sur GitHub.
 
 Le site est codé avec Gatsby qui est un *générateur de site statique*. Il utilise une forme particulière de javascript spécifique à React.

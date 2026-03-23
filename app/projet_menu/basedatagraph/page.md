@@ -1,9 +1,4 @@
----
-theme: développement
-title: Base de données en graphe
-rang: 3
----
-### Base de données en graphe
+### Graphe de données
 
 La base de données en graphe maquisdoc est implémentée avec neo4j. Elle est constituée de *noeuds* et de *relations* entre ces noeuds.
 

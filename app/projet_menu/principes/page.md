@@ -1,16 +1,10 @@
----
-theme: développement
-title: Principes
-rang: 1
----
 ### Principes
 
 Le projet maquisdoc est un ensemble structuré de documents pédagogiques et d'outils informatiques. Son objectif est de 
 
-<center>
-|sauvegarder | relier | diffuser | maintenir |
-|------------|--------|----------|-----------|
-</center>
+
+&nbsp;&nbsp;&nbsp;&nbsp;**sauvegarder** &nbsp;  **relier** &nbsp; **diffuser** &nbsp; **maintenir**
+
 
 #### Organisation-Implémentation
 
@@ -19,7 +13,7 @@ En arrière plan, les documents sources (essentiellement LateX) sont rassemblés
 
 **Relier: Base de données en graphe**  
 Le terme *maquisdoc* désigne une base de données pédagogiques en graphe qui référence les documents et les relations entre les documents.  
-Le lien [Base de données en graphe](/developpement/markdown/basedatagraph) du menu Projet présente le schéma de la base c'est à dire les différents types de noeuds et de relations.  
+Le lien [Graphe de données](/projet_menu/basedatagraph) du menu Projet présente le schéma de la base c'est à dire les différents types de noeuds et de relations.  
 Cette base est hébergée sur un serveur neo4j.
 
 **Diffuser: Site web - vues**  

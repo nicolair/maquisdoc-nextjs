@@ -7,8 +7,7 @@ Travail sur le livre *Measure and Integration* de Heinz König
 
 
 $$
-a^2 + b ^2 = c^2
-
+  a^2 + b ^2 = c^2 
 $$
 
 ceci est un essai d'écriture mathématique. 

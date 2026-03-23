@@ -1,9 +1,4 @@
----
-theme: développement
-title: Scripts de maintenance
-rang: 5
----
-### Maintenance d'un dépôt
+### Scripts de maintenance d'un dépôt
 
 Chaque dépôt est une composante du projet maquisdoc. La maintenance assure la cohérence entre l'état local du dépôt dans lequel un auteur vient de travailler et les autres composantes du projet.
 

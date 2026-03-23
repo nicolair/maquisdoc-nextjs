@@ -9,8 +9,7 @@ Les sources des composantes (interfaces, documents) sont placés dans des dépô
 | ----------------------------------------------------------------------------  | -----------------------------   | ------------------ |
 |[maquisdoc-gatsby4](https://github.com/nicolair/maquisdoc-gatsby4)             | site maquisdoc                  | `main`   |
 |[maquisdoc-neo4j-graphql](https://github.com/nicolair/maquisdoc-neo4j-graphql) | serveur graphql interface neo4j | `main`   |
-|[maquisdoc-rapidexo](https://github.com/nicolair/maquisdoc-rapidexo)           | interface rapidexo              | `main`   |
-|                                                                               |                                 |          |
+|[maquisdoc-rapidexo](https://github.com/nicolair/maquisdoc-rapidexo)           | interface rapidexo              | `main`   |                   
 | [mtn-dpt](https://github.com/nicolair/mtn_dpt)                                | maintenance des dépôts          | `master` |
 | [math-exos](https://github.com/nicolair/math-exos)                            | dépôt source exercices          | `master` |
 | [math-pbs](https://github.com/nicolair/math-pbs)                              | dépôt source problèmes          | `master` |

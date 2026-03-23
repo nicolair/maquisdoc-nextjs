@@ -9,16 +9,18 @@ import { gql } from '@apollo/client';
 
 //import { fetchGraphQLData } from '../lib/api/neo4j-graphql';
 
-import {Box, Typography} from "@mui/material";
-import {Container} from "@mui/material";
+import Typography from "@mui/material/Typography";
+import Box from '@mui/material/Box';
+import Container from "@mui/material/Container";
 import Grid from '@mui/material/Grid';
-import { Toolbar } from '@mui/material';
+import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Divider from '@mui/material/Divider';
 import Link from '@mui/material/Link';
+
+import MenuIcon from '@mui/icons-material/Menu';
 
 //import { rhythm } from "../lib/styles/typography"
 import Footer from "../components/footer"
@@ -186,7 +188,7 @@ function Layout({data, children}){
                 width: '100%',
               }}
                
-               paddingX={{ xs: 2, sm: 5, lg: 4 }}
+               paddingX={{  sm: 5, lg: 4 }}
             >
               <Grid container spacing={1}>
                 <Grid 
@@ -194,7 +196,6 @@ function Layout({data, children}){
                     display: "flex",
                     justifyContent: "center"
                   }}
-                  size={{xs:12}}  
                   alignItems="center">
                   <Link href={`/`}>
                     <Typography variant="h3" 
