@@ -32,7 +32,6 @@ async function Journal( ) {
                       {node.excerpt}
                     </Typography>
                  </Container>
-                
               </div>
             ))}
           </Container>

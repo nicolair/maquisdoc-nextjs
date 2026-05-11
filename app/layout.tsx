@@ -27,16 +27,16 @@ import Footer from "../components/footer"
 
 const darkgreen = "#1b5e20";
 
-const data = { } ; //fetchGraphQLData(GET_LAYOUT_DATA); 
+const data = { } ;  
   data.MenuVuesList = [ 
     {slug:'/vues/journal_math', texte:'Journal mathématique'},
-    {slug:'/vues/nouveautes', texte:'Modifications récentes'},
+    {slug:'/vues/nouveautes', texte:'Documents récents'},
+    {slug:'/vues/listeconcepts', texte:'Concepts'},
     {slug:'/vues/problemes' , texte:'Problèmes'}, 
     {slug:'/vues/feuillesexercices', texte:"Feuilles d'exercices"}, 
     {slug:'/vues/listecours', texte:'Cours'},
     {slug:'/vues/rapidexo', texte:'Rapidexos'},
-    {slug:'/vues/listeconcepts', texte:'Concepts'},
-    {slug:'/vues/annee/semaine_1', texte:'2019-2020 en mpsiB'}
+    {slug:'/vues/annee', texte:'2019-2020 en mpsiB'}
     ];
   data.ProjetMenuList = [
     {slug:'/projet_menu/principes', texte:"Principes"},
